@@ -763,8 +763,6 @@ pre span code {
   word-break: break-word;
 }
 
-/*Lisr Style
-/*-------------------------------------------------*/
 .list {
   position: relative;
 }
@@ -807,8 +805,7 @@ pre span code {
   margin-left: 30px;
 }
 
-/*section padding
-/*-------------------------------------------------*/
+
 .section-padding {
   padding: 90px 0;
 }
