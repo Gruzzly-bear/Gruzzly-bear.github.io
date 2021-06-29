@@ -1,0 +1,206 @@
+.white-text {
+    color: #ffffff !important
+}
+
+.black-text {
+    color: #363636 !important
+}
+
+.gray-text {
+    color: #999999 !important
+}
+
+.white-bg {
+    background-color: #ffffff !important
+}
+
+.gray-bg {
+    background-color: #f7f7f7 !important
+}
+
+.dark-gray-bg {
+    background-color: #666666 !important
+}
+
+.black-bg {
+    background-color: #323232 !important
+}
+
+.dark-black-bg {
+    background-color: #050801 !important
+}
+
+.overlay {
+    z-index: 0;
+    position: relative;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    overflow: hidden;
+}
+
+.overlay[data-overlay-color="gradient-1"]:after {
+    background: -webkit-radial-gradient(at 50% -20%, #1cb5e0, #16113B) fixed;
+    background: -moz-radial-gradient(at 50% -20%, #1cb5e0, #16113B) fixed;
+    background: -o-radial-gradient(at 50% -20%, #1cb5e0, #16113B) fixed;
+    background: radial-gradient(at 50% -20%, #1cb5e0, #16113B) fixed;
+}
+
+.overlay[data-overlay-color="gradient-2"]:after {
+    background: -webkit-linear-gradient(315deg, rgba(255, 0, 89, 0.94) 0%, rgba(255, 50, 0, 0.71) 100%);
+    background: -moz-linear-gradient(315deg, rgba(255, 0, 89, 0.94) 0%, rgba(255, 50, 0, 0.71) 100%);
+    background: -o-linear-gradient(315deg, rgba(255, 0, 89, 0.94) 0%, rgba(255, 50, 0, 0.71) 100%);
+    background: linear-gradient(135deg, rgba(255, 0, 89, 0.94) 0%, rgba(255, 50, 0, 0.71) 100%);
+}
+
+.overlay[data-overlay-color="gradient-3"]:after {
+    background: -webkit-linear-gradient(45deg, #448dff 0%, #c227ff 100%);
+    background: -moz-linear-gradient(45deg, #448dff 0%, #c227ff 100%);
+    background: -o-linear-gradient(45deg, #448dff 0%, #c227ff 100%);
+    background: linear-gradient(45deg, #448dff 0%, #c227ff 100%);
+}
+
+.overlay[data-overlay-color="gradient-4"]:after {
+    background-image: -webkit-linear-gradient(150deg, #ff5858 0%, #f09819 100%);
+    background-image: -moz-linear-gradient(150deg, #ff5858 0%, #f09819 100%);
+    background-image: -o-linear-gradient(150deg, #ff5858 0%, #f09819 100%);
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+
+.overlay[data-overlay-color="gradient-5"]:after {
+    background: -webkit-gradient(linear, left top, right top, from(#8e2de2), to(#4a00e0));
+    background: -webkit-linear-gradient(left, #8e2de2, #4a00e0);
+    background: -moz-linear-gradient(left, #8e2de2, #4a00e0);
+    background: -o-linear-gradient(left, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.overlay[data-overlay-color="gradient-6"]:after {
+    background: -webkit-radial-gradient(at 50% -20%, #304FFE, #16113B) fixed;
+    background: -moz-radial-gradient(at 50% -20%, #304FFE, #16113B) fixed;
+    background: -o-radial-gradient(at 50% -20%, #304FFE, #16113B) fixed;
+    background: radial-gradient(at 50% -20%, #304FFE, #16113B) fixed;
+}
+
+.overlay[data-overlay-color="light"]:after {
+    background-color: #ffffff;
+}
+
+.overlay[data-overlay-color="dark"]:after {
+    background-color: #222222;
+}
+
+.overlay[data-overlay-color="black"]:after {
+    background-color: #000000;
+}
+
+.overlay[data-overlay="1"]:after {
+    opacity: 0.1;
+}
+
+.overlay[data-overlay="2"]:after {
+    opacity: 0.2;
+}
+
+.overlay[data-overlay="3"]:after {
+    opacity: 0.3;
+}
+
+.overlay[data-overlay="4"]:after {
+    opacity: 0.4;
+}
+
+.overlay[data-overlay="5"]:after {
+    opacity: 0.5;
+}
+
+.overlay[data-overlay="6"]:after {
+    opacity: 0.6;
+}
+
+.overlay[data-overlay="7"]:after {
+    opacity: 0.7;
+}
+
+.overlay[data-overlay="8"]:after {
+    opacity: 0.8;
+}
+
+.overlay[data-overlay="9"]:after {
+    opacity: 0.9;
+}
+
+/////******///
+.gradient-animation {
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(220deg, #a24bcf, #4b79cf, #4bc5cf);
+    background: -moz-linear-gradient(220deg, #a24bcf, #4b79cf, #4bc5cf);
+    background: -o-linear-gradient(220deg, #a24bcf, #4b79cf, #4bc5cf);
+    background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+    -moz-background-size: 300% 300%;
+    background-size: 300% 300%;
+    -webkit-animation: g-animation 20s ease infinite;
+    -moz-animation: g-animation 20s ease infinite;
+    -o-animation: g-animation 20s ease infinite;
+    animation: g-animation 20s ease infinite;
+}
+
+@-webkit-keyframes g-animation {
+    0% {
+        background-position: 0% 84%
+    }
+    50% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+@-moz-keyframes g-animation {
+    0% {
+        background-position: 0% 84%
+    }
+    50% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+@-o-keyframes g-animation {
+    0% {
+        background-position: 0% 84%
+    }
+    50% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+@keyframes g-animation {
+    0% {
+        background-position: 0% 84%
+    }
+    50% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}

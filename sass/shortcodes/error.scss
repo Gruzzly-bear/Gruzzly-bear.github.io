@@ -1,0 +1,43 @@
+.error {
+    position: relative;
+    span {
+        color: rgba(233, 236, 240, 0.2);
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 140px;
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 50px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.error-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.error_links {
+    margin: 0;
+    padding: 0;
+    a {
+        color: inherit;
+        margin: 0px 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .error h2 {
+        font-size: 34px;
+    }
+}
