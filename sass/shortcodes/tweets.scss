@@ -1,0 +1,50 @@
+.tweets-feed {
+    position: relative;
+    .media,
+    .interact {
+        display: none;
+    }
+    .user {
+        display: none;
+        img {
+            max-height: 3.71428571rem;
+            margin-right: 0.46428571rem;
+        }
+        [data-scribe="component:author"],
+        [data-scribe="element:name"],
+        [data-scribe="element:screen_name"] {
+            display: none;
+        }
+    }
+    .timePosted {
+        margin: 0;
+        text-decoration: underline;
+        font-size: 0.8rem;
+    }
+    li {
+        overflow: hidden;
+        position: relative;
+        padding: 1.8rem;
+        &:before {
+            font-family: 'FontAwesome';
+            content: "\f099";
+            color: #5a9ef2;
+            font-size: 1.8rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .tweet {
+            width: 100%;
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+    &.dark-tweets {
+        color: #ffffff;
+        a {
+            color: #aaaaaa;
+        }
+    }
+}
